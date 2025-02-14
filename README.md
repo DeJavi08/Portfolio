@@ -3,11 +3,11 @@
 <table>
   <tr>
     <td>
-      Selamat datang di repositori source code untuk **Portfolio Website** milik **Javier Ahmad Arivery**.  
+      Selamat datang di repositori source code untuk Portfolio Website** milik Javier Ahmad Arivery.  
       Website ini menampilkan pengalaman, proyek, dan keterampilan saya sebagai pengembang teknologi dan kreator digital.  
       <br><br>
-      🚀 **Demo Website**: https://javiahmad.netlify.app  <br>
-      🛠 **Dibuat dengan**: HTML, CSS, JavaScript, React, Tailwind CSS  
+      🚀 Demo Website: https://javiahmad.netlify.app  <br>
+      🛠 Dibuat dengan: HTML, CSS, JavaScript, React, Tailwind CSS  
     </td>
     <td>
       <img src="https://javiahmad.netlify.app/assets/img/hero.jpg" alt="Javier Ahmad Arivery" width="250" style="border-radius: 10px;">
