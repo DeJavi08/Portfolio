@@ -10,6 +10,10 @@
       🛠 **Dibuat dengan**: HTML, CSS, JavaScript, React, Tailwind CSS  
     </td>
     <td>
+      <img src="https://javiahmad.netlify.app/assets/img/hero.jpg" alt="Javier Ahmad Arivery" width="250" style="border-radius: 10px;">
+    </td>
+  </tr>
+</table>
 
 ## 🎯 Fitur Utama  
 
