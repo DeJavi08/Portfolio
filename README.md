@@ -1,13 +1,15 @@
 # 🖥️ Portfolio - Javier Ahmad Arivery  
 
-<p align="left">
-  <img src="https://javiahmad.netlify.app/assets/img/hero.jpg" alt="Javier Ahmad Arivery" width="250" style="border-radius: 10px; float: right; margin-left: 20px;">
-  Selamat datang di repositori source code untuk **Portfolio Website** milik **Javier Ahmad Arivery**.  
-  Website ini menampilkan pengalaman, proyek, dan keterampilan saya sebagai pengembang teknologi dan kreator digital.  
-  <br><br>
-  🚀 **Demo Website**: [javiahmad.netlify.app](https://javiahmad.netlify.app/)  
-  🛠 **Dibuat dengan**: HTML, CSS, JavaScript, React, Tailwind CSS  
-</p>
+<table>
+  <tr>
+    <td>
+      Selamat datang di repositori source code untuk **Portfolio Website** milik **Javier Ahmad Arivery**.  
+      Website ini menampilkan pengalaman, proyek, dan keterampilan saya sebagai pengembang teknologi dan kreator digital.  
+      <br><br>
+      🚀 **Demo Website**: [javiahmad.netlify.app](https://javiahmad.netlify.app/)  
+      🛠 **Dibuat dengan**: HTML, CSS, JavaScript, React, Tailwind CSS  
+    </td>
+    <td>
 
 ## 🎯 Fitur Utama  
 
