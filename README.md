@@ -38,12 +38,6 @@
    npm start
    ```
 
-## 📷 Screenshot  
-
-| Tampilan Website |
-|------------------|
-| ![Portfolio Screenshot](https://javiahmad.netlify.app/assets/img/hero.jpg) |
-
 ## 👨‍💻 Teknologi yang Digunakan  
 
 - **Frontend**: React.js, Tailwind CSS  
