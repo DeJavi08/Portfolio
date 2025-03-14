@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="blog-title">Loading...</title>
+    <meta property="og:url" content="https://javiahmad.netlify.app/">
+    <link href="https://i.ibb.co/P67WRLd/Round-Huruf-J.png" rel="icon">
+    <link href="https://i.ibb.co/P67WRLd/Round-Huruf-J.png" rel="a-logo">
+    
+    <!--=============== Remixicons ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/skins/color-1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== Markdown Parser ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <!--=============== Header ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
+    
+<!--=============== Blog Details ===============-->
+<div class="blog__header"></div>
+
+<section class="container">
+    <div class="blog__details">
+        <a href="index.html" class="back__to-home text-xs">
+            <i class="ri-arrow-left-line"></i> Back
+        </a>
+
+        <!-- Judul dan Tanggal Blog -->
+        <h3 class="post__details-title text-lg" id="blog-title-content">Loading...</h3>
+        <p class="post__details-date text-sm" id="blog-date">Loading...</p>
+
+        <!-- Gambar Blog (disembunyikan jika tidak ada gambar) -->
+        <div id="blog-image-container" style="display: none;">
+            <img id="blog-image" src="" alt="Blog Image" class="blog__image">
+        </div>
+
+        <!-- Konten Blog -->
+        <div class="post__details text-lg" id="blog-content">Loading...</div>
+
+        <!-- Tombol Share -->
+<div class="post__social-share">
+    <span class="post__share text-lg">Share this post:</span>
+    <div class="post__social-links">
+        <a href="#" class="post__share-link whatsapp-btn" target="_blank" rel="noopener">
+            <i class="ri-whatsapp-fill"></i>
+        </a>
+        <a href="#" class="post__share-link line-btn" target="_blank" rel="noopener">
+            <i class="ri-line-fill"></i>
+        </a>
+        <a href="#" class="post__share-link twitter-btn" target="_blank" rel="noopener">
+            <i class="ri-twitter-fill"></i>
+        </a>
+        <a href="#" class="post__share-link facebook-btn" target="_blank" rel="noopener">
+            <i class="ri-facebook-box-fill"></i>
+        </a>
+        <a href="#" class="post__share-link linkedin-btn" target="_blank" rel="noopener">
+            <i class="ri-linkedin-box-fill"></i>
+        </a>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+    <!--=============== Contact ===============-->
+    <section class="contact section" id="contact">
+        <div class="contact__content container">
+          <h2 class="section__title">Get in touch_</h2>
+          
+          <div class="contact__container grid">
+            <div class="contact__info">
+              <dl class="contact__list">
+                <dt>Phone:</dt>
+                <dd>+62 822 4666 8753</dd>
+                <dt>Insta:</dt>
+                <dd>@javii08._</dd>
+                <dt>Email:</dt>
+                <dd>masjavi08@gmail.com</dd>
+              </dl>
+  
+              <ul class="contact__socials">
+                <li>
+                  <a href="https://wa.me/6282246668753" class="contact__social-link"
+                  >Whatsapp</a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/people/DeJavi/100069168613136/" class="contact__social-link"
+                  >Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/javii08._/" class="contact__social-link"
+                  >Instagram</a>
+                </li>
+                <li>
+                  <a href="https://discord.com/invite/SRK4EY3kBH" class="contact__social-link"
+                  >Discord</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="contact__form">
+              <p class="contact__form-title">Or just write me a letter here_</p>
+            
+            <form action="" id="contact-form">
+              <div class="contact__input-div">
+                <input
+                type="text"
+                name="name"
+                placeholder="Your name" 
+                class="contact__input"
+                id="contact-name"
+                />
+              </div>
+  
+              <div class="contact__input-div">
+                <input
+                type="email"
+                name="email"
+                placeholder="Your e-mail" 
+                class="contact__input"
+                id="contact-email"
+                />
+              </div>
+  
+              <div class="contact__input-div">
+                <textarea
+                name="message"
+                placeholder="Type the message here"
+                class="contact__input textarea" 
+                id="message"
+                cols="30"
+                rows="10"
+                ></textarea>
+              </div>
+  
+              <p class="contact__message text-sm"
+              id="contact-message"></p>
+  
+              <button type="submit" class="button contact__button">
+                SEND
+              </button>
+  
+            </form>
+  
+            <p class="footer__copy">
+              &copy; 2023 Javier Ahmad. All Rights Reserved
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--=============== Style Switcher ===============-->
+      <div class="style__switcher"></div>
+  
+      <!--=============== Email Js ===============-->
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+  
+      <script>
+        // Pastikan Markdown tetap mempertahankan spasi antar paragraf
+        marked.setOptions({
+            breaks: true
+        });
+    
+        // Ambil parameter dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const blogFile = urlParams.get('blog');
+    
+        if (blogFile) {
+            fetch(`blog/${blogFile}.md`)
+                .then(response => response.text())
+                .then(data => {
+                    const lines = data.split("\n");
+                    const title = lines[0].replace("# ", "").trim();
+                    const date = lines[1].replace("**Date:** ", "").trim();
+                    let image = lines[2].includes("**Image:**") ? lines[2].replace("**Image:** ", "").trim() : null;
+                    const content = lines.slice(image ? 3 : 2).join("\n");
+    
+                    document.getElementById("blog-title").innerText = title;
+                    document.getElementById("blog-title-content").innerText = title;
+                    document.getElementById("blog-date").innerText = date;
+    
+                    let parsedContent = marked.parse(content);
+    
+                    // Pisahkan paragraf pertama dari paragraf lainnya
+                    let paragraphs = parsedContent.split("</p>");
+                    let firstParagraph = paragraphs.shift() + "</p>"; // Ambil paragraf pertama
+                    let remainingContent = paragraphs.join("</p>"); // Sisanya tetap di bawah
+    
+                    const blogImageElement = document.getElementById("blog-image");
+                    const blogContentElement = document.getElementById("blog-content");
+    
+                    if (image && image !== "") {
+                        blogImageElement.src = image;
+                        blogImageElement.style.display = "block";
+    
+                        // Cek apakah gambar square (1:1)
+                        let img = new Image();
+                        img.src = image;
+                        img.onload = function () {
+                            let aspectRatio = img.width / img.height;
+                            if (aspectRatio >= 0.9 && aspectRatio <= 1.1) { 
+                                // Jika gambar square, gunakan layout horizontal HANYA untuk paragraf pertama
+                                let container = document.createElement("div");
+                                container.classList.add("blog__first-paragraph");
+    
+                                blogImageElement.style.maxWidth = "320px"; // Perbesar gambar
+                                blogImageElement.style.height = "auto";
+                                blogImageElement.style.objectFit = "cover"; // Pastikan gambar tetap proporsional
+    
+                                let firstParagraphWrapper = document.createElement("div");
+                                firstParagraphWrapper.innerHTML = firstParagraph;
+                                firstParagraphWrapper.style.display = "flex";
+                                firstParagraphWrapper.style.alignItems = "center";
+    
+                                container.appendChild(blogImageElement);
+                                container.appendChild(firstParagraphWrapper);
+    
+                                // Pastikan tinggi gambar sama dengan paragraf pertama
+                                setTimeout(() => {
+                                    let textHeight = firstParagraphWrapper.clientHeight;
+                                    blogImageElement.style.height = `${textHeight}px`;
+                                }, 100);
+    
+                                // Tambahkan ke konten
+                                blogContentElement.innerHTML = "";
+                                blogContentElement.appendChild(container);
+                                blogContentElement.innerHTML += remainingContent;
+                            } else {
+                                // Jika bukan square, gambar tetap muncul normal di atas
+                                blogContentElement.innerHTML = `<div class="post__details">${parsedContent}</div>`;
+                            }
+                        };
+                    } else {
+                        blogImageElement.style.display = "none"; // Sembunyikan gambar jika tidak ada
+                        blogContentElement.innerHTML = `<div class="post__details">${parsedContent}</div>`;
+                    }
+    
+                    // Setelah konten blog dimuat, buat link berbagi otomatis
+                    generateShareLinks();
+                })
+                .catch(error => {
+                    document.getElementById("blog-content").innerHTML = "<p>Blog not found.</p>";
+                });
+        } else {
+            document.getElementById("blog-content").innerHTML = "<p>No blog specified.</p>";
+        }
+    
+        // Fungsi untuk mengatur link berbagi otomatis
+function generateShareLinks() {
+    let postUrl = encodeURIComponent(window.location.href);
+    let postTitle = encodeURIComponent(document.getElementById("blog-title").innerText);
+
+    let whatsappBtn = document.querySelector(".whatsapp-btn");
+    let lineBtn = document.querySelector(".line-btn");
+    let twitterBtn = document.querySelector(".twitter-btn");
+    let facebookBtn = document.querySelector(".facebook-btn");
+    let linkedinBtn = document.querySelector(".linkedin-btn");
+
+    if (whatsappBtn && lineBtn && twitterBtn && facebookBtn && linkedinBtn) {
+        whatsappBtn.href = `https://api.whatsapp.com/send?text=${postTitle} ${postUrl}`;
+        lineBtn.href = `https://social-plugins.line.me/lineit/share?url=${postUrl}`;
+        twitterBtn.href = `https://twitter.com/share?url=${postUrl}&text=${postTitle}`;
+        facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${postUrl}`;
+        linkedinBtn.href = `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`;
+    } else {
+        console.warn("Tombol share belum tersedia, menunggu...");
+        setTimeout(generateShareLinks, 500); // Coba lagi setelah 0.5 detik
+    }
+}
+
+// Tunggu hingga DOM sepenuhnya dimuat sebelum menjalankan fungsi
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(generateShareLinks, 100); // Beri sedikit delay agar elemen tersedia
+});
+
+    
+    </script>
+
+
+    <!--=============== Js ===============-->
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
