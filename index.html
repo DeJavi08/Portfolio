@@ -13,6 +13,11 @@
     <link href="https://i.ibb.co/P67WRLd/Round-Huruf-J.png" rel="icon">
     <link href="https://i.ibb.co/P67WRLd/Round-Huruf-J.png" rel="a-logo">
     <meta property="og:url" content="https://javiahmad.netlify.app/">
+
+    <!--=============== Netlify Login ===============-->
+    <script src=
+      "https://identity.netlify.com/v1/netlify-identity-widget.js">
+    </script>
     
     <!--=============== Remixicons ===============-->
     <link
@@ -677,38 +682,29 @@
       <!--=============== Blog ===============-->
       <section class="blog section container" id="blog">
         <h2 class="section__title">Latest Posts_</h2>
-
-        <div class="posts__container grid">
-          <a href="blog_youtube10k-2024.html" class="post__card">
-            <img src="assets/img/blog/youtube-10K.jpg" alt="" class="post__img">
-
-            <div class="post__content">
-              <p class="post__date text-xs">22 September 2024</p>
-              <h3 class="post__title text-sm">
-                10.000 YOUTUBE SUBSCRIBER
-              </h3>
-              <p class="post__description text-sm">
-                
-                Sebuah kisah pencapaian Javi dalam mendapatkan 10.000 subscriber di Youtube yang dimulai sejak kelas 6 SD. Pelan-pelan yang penting konsisten!              </p>
-            </div>
-          </a>
-
-          <a href="blog_tamanflora-2019.html" class="post__card">
-            <img src="assets/img/blog/tamanflora-1.png" alt="" class="post__img">
-
-            <div class="post__content">
-              <p class="post__date text-xs">09 November 2019</p>
-              <h3 class="post__title text-sm">
-                PERJALANAN MENUJU KEBUN BIBIT
-              </h3>
-              <p class="post__description text-sm">
-                Ini adalah kisah saya ketika berkunjung ke taman flora surabaya pada saat saya berumur 12 Tahun.
-              </p>
-            </div>
-          </a>
-
-        </div>
-      </section>
+        <div id="blog-list" class="posts__container grid"></div>
+    </section>
+    
+    <script>
+        fetch("blog/blog-list.json")
+            .then(response => response.json())
+            .then(blogs => {
+                let blogContainer = document.getElementById("blog-list");
+                blogs.forEach(blog => {
+                    let blogPost = `
+                        <a href="blog-template.html?blog=${blog.slug}" class="post__card">
+                            <img src="${blog.image}" alt="" class="post__img">
+                            <div class="post__content">
+                                <p class="post__date text-xs">${blog.date}</p>
+                                <h3 class="post__title text-sm">${blog.title}</h3>
+                                <p class="post__description text-sm">${blog.excerpt}</p>
+                            </div>
+                        </a>
+                    `;
+                    blogContainer.innerHTML += blogPost;
+                });
+            });
+    </script>    
 
       <!--=============== Contact ===============-->
       <section class="contact section" id="contact">
@@ -820,5 +816,42 @@
 
     <!--=============== Common ===============-->
     <script src="assets/js/common.js"></script>
+
+    <!--=============== Markdown ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let blogContent = document.querySelector(".post__details");
+      if (blogContent) {
+          blogContent.innerHTML = marked.parse(blogContent.innerText);
+        }
+      });
+    </script>
+
+<script>
+  fetch("blog/blog-list.json")
+    .then(response => response.json())
+    .then(blogs => {
+        console.log("Data dari JSON:", blogs); // Debugging
+        let blogContainer = document.getElementById("blog-list");
+        blogContainer.innerHTML = ""; // Pastikan tidak ada duplikasi
+
+        blogs.forEach(blog => {
+            let blogPost = `
+                <a href="blog-template.html?blog=${blog.slug}" class="post__card">
+                    <img src="${blog.image}" alt="" class="post__img">
+                    <div class="post__content">
+                        <p class="post__date text-xs">${blog.date}</p>
+                        <h3 class="post__title text-sm">${blog.title}</h3>
+                        <p class="post__description text-sm">${blog.excerpt}</p>
+                    </div>
+                </a>
+            `;
+            blogContainer.innerHTML += blogPost;
+        });
+    })
+    .catch(error => console.error("Error loading blog list:", error));
+</script>
+
   </body>
 </html>
